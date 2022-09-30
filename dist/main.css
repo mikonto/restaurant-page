@@ -1,0 +1,42 @@
+@font-face {
+    font-family: courgette;
+    src: url(courgette.ttf);
+  }
+
+body {
+    font-family: courgette;
+    background-color: #1C2C59;
+}
+
+.page {
+    background-color: whitesmoke;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 2.5rem;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.page img:first-child {
+    height: 60px;
+}
+
+h3 {
+    margin: 0;
+    margin-top: 1.6rem;
+}
+
+p {
+    margin: 0;
+}
+
+#description {
+    margin: 2rem;
+    margin-bottom: 0;
+    text-align: center;
+}
+
