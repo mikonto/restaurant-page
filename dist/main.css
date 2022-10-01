@@ -1,37 +1,65 @@
 @font-face {
-    font-family: courgette;
-    src: url(courgette.ttf);
+    font-family: dosis;
+    src: url(dosis.ttf);
   }
 
 body {
-    font-family: courgette;
+    font-family: Verdana, sans-serif;
+    background-color: #1C2C59;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/*-------------MENU--------------------*/
+ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
     background-color: #1C2C59;
 }
 
-.page {
+li a {
+    color: white;
+    padding: 0 22px;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+  
+li a:hover:not(.active) {
+    text-decoration: underline;
+}
+  
+.active {
+    text-decoration: underline;
+    font-weight: bold;
+}
+/*---------------------------------*/
+
+#home, #menu, #contact {
     background-color: whitesmoke;
     border-radius: 20px;
     margin: auto;
-    margin-top: 2.5rem;
-    max-width: 500px;
+    max-width: 400px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding: 25px;
+    padding: 25px 25px 55px 25px;
 }
 
-.page img:first-child {
+#logo {
     height: 60px;
 }
 
 h3 {
-    margin: 0;
+    /* margin: 0; */
     margin-top: 1.6rem;
+    margin-bottom: 0.5rem;
 }
 
 p {
-    margin: 0;
+    margin: 2px;
 }
 
 #description {
@@ -40,3 +68,9 @@ p {
     text-align: center;
 }
 
+footer {
+    margin-top: auto;
+    text-align: center;
+    margin-bottom: 12px;
+    color: #fff;
+  }
