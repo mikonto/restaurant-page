@@ -12,18 +12,26 @@ function resetNavStyling() {
     navContact.removeAttribute("class", "active");
 }
 
+function resetContent() {
+    const content = document.getElementById('content');
+    content.replaceChildren();
+}
+
 document.getElementById("navhome").addEventListener('click',() => {    
     resetNavStyling();
+    resetContent();
     home();
 });
 
 document.getElementById("navmenu").addEventListener('click',() => {    
     resetNavStyling();
+    resetContent();
     menu();
 });
 
 document.getElementById("navcontact").addEventListener('click',() => {    
     resetNavStyling();
+    resetContent();
     contact();
 });
 

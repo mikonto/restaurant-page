@@ -3,7 +3,6 @@ const home = function() {
     navHome.setAttribute("class", "active");
 
     const content = document.getElementById('content');
-    content.replaceChildren();
     
     const home = document.createElement("div");
     home.setAttribute("id", "home");

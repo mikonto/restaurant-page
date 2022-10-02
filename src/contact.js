@@ -3,7 +3,6 @@ const contact = function() {
     navContact.setAttribute("class", "active");
 
     const content = document.getElementById('content');
-    content.replaceChildren();
     
     const menu = document.createElement("div");
     menu.setAttribute("id", "menu");
