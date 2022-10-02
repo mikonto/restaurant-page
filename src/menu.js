@@ -1,20 +1,8 @@
-function setNavStyling() {
-    const navHome = document.getElementById('navhome');
-    const navMenu = document.getElementById('navmenu');
-    const navContact = document.getElementById('navcontact');
-
-    navHome.removeAttribute("class", "active");
-    navMenu.removeAttribute("class", "active");
-    navContact.removeAttribute("class", "active");
-
-    navMenu.setAttribute("class", "active");
-}
-
 const menu = function() {
-    setNavStyling();
+    const navMenu = document.getElementById('navmenu');
+    navMenu.setAttribute("class", "active");
 
     const content = document.getElementById('content');
-
     content.replaceChildren();
     
     const menu = document.createElement("div");

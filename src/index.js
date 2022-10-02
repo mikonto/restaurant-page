@@ -2,10 +2,29 @@ import { home } from './home';
 import { menu } from './menu';
 import { contact } from './contact';
 
-document.getElementById("navhome").addEventListener("click", home);
+function resetNavStyling() {
+    const navHome = document.getElementById('navhome');
+    const navMenu = document.getElementById('navmenu');
+    const navContact = document.getElementById('navcontact');
 
-document.getElementById("navmenu").addEventListener("click", menu);
+    navHome.removeAttribute("class", "active");
+    navMenu.removeAttribute("class", "active");
+    navContact.removeAttribute("class", "active");
+}
 
-document.getElementById("navcontact").addEventListener("click", contact);
+document.getElementById("navhome").addEventListener('click',() => {    
+    resetNavStyling();
+    home();
+});
 
-home(); 
+document.getElementById("navmenu").addEventListener('click',() => {    
+    resetNavStyling();
+    menu();
+});
+
+document.getElementById("navcontact").addEventListener('click',() => {    
+    resetNavStyling();
+    contact();
+});
+
+home();

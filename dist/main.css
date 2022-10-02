@@ -6,18 +6,19 @@
 body {
     font-family: Verdana, sans-serif;
     background-color: #1C2C59;
+    background-image: url(background.png);
+    background-size: cover;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
 
-/*-------------MENU--------------------*/
+/*-------------NAV--------------------*/
 ul {
     display: flex;
     justify-content: center;
     list-style-type: none;
-    background-color: #1C2C59;
 }
 
 li a {
